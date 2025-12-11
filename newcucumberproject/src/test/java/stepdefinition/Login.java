@@ -29,6 +29,7 @@ public Login(SharedClassDriver sharedClassDriver) {
     public void user_enter_email_as_and_password_as(String string, String string2){
         driver.findElement(By.name("email")).sendKeys(string);
         driver.findElement(By.name("password")).sendKeys(string2);
+        System.out.println("Email and Password Entered");
         
     }
     @And("click on login button")
