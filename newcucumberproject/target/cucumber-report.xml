@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.896" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-12-11T13:09:35.395075600Z">
+<testcase classname="Login feature" name="Valid Login test" time="10.938">
+<system-out><![CDATA[
+When user enter email as "kishore.r+psychadmin2@spritle.com" and password as "Password$5000".passed
+And click on login button...................................................passed
+Then user is navigated to the home page "https://app-dev.innerkraft.com/dashboard".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="Invalid Login test" time="8.766">
+<system-out><![CDATA[
+When user enter email as "kishore.r+psychadmin2@spritle.com" and password as "Password$5043".passed
+And click on login button...................................................passed
+Then user stayed on same page "https://app-dev.innerkraft.com/".............passed
+]]></system-out>
+</testcase>
+</testsuite>
