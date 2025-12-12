@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="34.797" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-12-12T12:50:56.396311800Z">
-<testcase classname="Login feature" name="Valid Login test" time="15.392">
+<testsuite name="Cucumber" time="164.508" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-12-12T13:34:29.860460400Z">
+<testcase classname="Login feature" name="Valid Login test" time="82.859">
 <system-out><![CDATA[
 When user enter email as "kishore.r+psychadmin2@spritle.com" and password as "Password$5000".passed
 And click on login button...................................................passed
 Then user is navigated to the home page "https://app-dev.innerkraft.com/dashboard".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login feature" name="Invalid Login test" time="19.176">
+<testcase classname="Login feature" name="Invalid Login test" time="81.443">
 <system-out><![CDATA[
 When user enter email as "kishore.r+psychadmin2@spritle.com" and password as "Password$5043".passed
 And click on login button...................................................passed

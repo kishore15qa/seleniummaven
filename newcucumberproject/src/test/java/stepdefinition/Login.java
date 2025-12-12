@@ -2,8 +2,12 @@ package stepdefinition;
 
 import static org.junit.Assert.assertEquals;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -39,6 +43,8 @@ public Login(SharedClassDriver sharedClassDriver) {
     }
     @Then ("user is navigated to the home page {string}")
     public void user_is_navigated_to_the_home_page(String expectedUrlString){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+       wait.until(ExpectedConditions.urlContains("dashboard"));
         String actualUrl = driver.getCurrentUrl();
         assertEquals(expectedUrlString, actualUrl);
 
