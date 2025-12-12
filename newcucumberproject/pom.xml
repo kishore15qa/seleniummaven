@@ -70,16 +70,18 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                          <groupId>net.masterthought</groupId> 
                          <artifactId>maven-cucumber-reporting</artifactId> 
                          <version>5.7.5</version> 
-                         <executions> <execution> 
+                         <executions> 
+                         <execution> 
                          <id>execution</id>
                           <phase>verify</phase> 
-                          <goals> <goal>generate</goal>
+                          <goals> 
+                          <goal>generate</goal>
                            </goals>
                             <configuration> 
                             <projectName>Selenium Cucumber Tests</projectName>
                              <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
                               <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory> 
-                              <jsonFiles> <param>${project.build.directory}/cucumber-report.json</param> </jsonFiles> 
+                              <jsonFiles> <param>${project.build.directory}/cucumber-reports/cucumber-report.json</param> </jsonFiles> 
                               <skippedFails>true</skippedFails> 
                               <enableFlashCharts>true</enableFlashCharts> 
                               </configuration> </execution> </executions> 
