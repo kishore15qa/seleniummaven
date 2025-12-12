@@ -25,12 +25,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <version>7.33.0</version> 
         <scope>test</scope> 
         </dependency>
-         <dependency> 
-         <groupId>org.junit.jupiter</groupId>
-          <artifactId>junit-jupiter-api</artifactId>
-           <version>6.1.0-M1</version> 
-           <scope>test</scope> 
-           </dependency> 
+        <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
            <dependency>
             <groupId>com.aventstack</groupId> 
             <artifactId>extentreports</artifactId> 
@@ -79,7 +79,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                             <projectName>Selenium Cucumber Tests</projectName>
                              <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
                               <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory> 
-                              <jsonFiles> <param>**/*.json</param> </jsonFiles> 
+                              <jsonFiles> <param>${project.build.directory}/cucumber-report.json</param> </jsonFiles> 
                               <skippedFails>true</skippedFails> 
                               <enableFlashCharts>true</enableFlashCharts> 
                               </configuration> </execution> </executions> 
