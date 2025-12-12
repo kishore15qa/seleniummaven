@@ -11,9 +11,9 @@ import io.cucumber.junit.CucumberOptions;
     features = "src/test/java/feature", 
     glue = "stepdefinition", 
     plugin = { "pretty",
-    "html:target/cucumber.html",
-    "json:target/cucumber.json",
-    "junit:target/cucumber.xml"},
+    "html:target/cucumber-reports/cucumber-report.html",
+    "json:target/cucumber-reports/cucumber.json",
+    "junit:target/cucumber-reports/cucumber.xml"},
     monochrome = true)
 public class LoginRunner {
 
