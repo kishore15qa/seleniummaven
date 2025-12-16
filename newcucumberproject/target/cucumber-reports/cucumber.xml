@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="97.471" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-12-15T12:56:51.351461100Z">
-<testcase classname="User CRUD feature" name="Create User" time="48.244">
+<testsuite name="Cucumber" time="94.241" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-12-16T12:34:00.415755200Z">
+<testcase classname="Psychologist User CRUD Operations" name="Create Psychologist User" time="46.538">
 <system-out><![CDATA[
 Given logging in as psych admin user........................................passed
-When user is on the user creation page......................................passed
-And user clicks Add student button..........................................passed
-And user fills in the student details.......................................passed
-And user clicks Create button...............................................passed
-Then user should redirected to the student list page........................passed
+When user is on the psychologist user management page.......................passed
+And user clicks Add psychologist button.....................................passed
+And user fills in the psychologist details..................................passed
+And user clicks Add button..................................................passed
+Then user should be redirected to the psychologist user list page...........passed
 ]]></system-out>
 </testcase>
-<testcase classname="User CRUD feature" name="Edit User" time="21.136">
+<testcase classname="Psychologist User CRUD Operations" name="Edit Psychologist User" time="23.351">
 <system-out><![CDATA[
 Given logging in as psych admin user........................................passed
-When user is on the user creation page......................................passed
-And user searches for the student by name...................................passed
-And user edits the student details..........................................passed
-Then user should see the updated student details in the list................passed
+When user is on the psychologist user management page.......................passed
+And user searches for the psychologist by name..............................passed
+And user edits the psychologist details.....................................passed
+Then user should see the success toaster in the psychologist list page......passed
 ]]></system-out>
 </testcase>
-<testcase classname="User CRUD feature" name="Delete User" time="27.912">
+<testcase classname="Psychologist User CRUD Operations" name="Delete Psychologist User" time="24.164">
 <system-out><![CDATA[
 Given logging in as psych admin user........................................passed
-When user is on the user creation page......................................passed
-And user searches for the student by name...................................passed
-And user deletes the student................................................passed
-Then user should not see the student in the list anymore....................passed
+When user is on the psychologist user management page.......................passed
+And user searches for the psychologist by name..............................passed
+And user deletes the psychologist...........................................passed
+Then user should see the delete success toaster in the psychologist list page.passed
 ]]></system-out>
 </testcase>
 </testsuite>
